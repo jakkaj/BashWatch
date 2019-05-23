@@ -13,4 +13,8 @@ echo "Watching $FILE"
 inotifywait -m -e close_write "$FILE" | 
     while read path _ file; do
         "$FILE" $@
+        RESULT=$?
+        if [ "$RESULT" -ne 0 ]; then
+            echo "Non-Zero Exit Code: $RESULT"
+        fi
     done
