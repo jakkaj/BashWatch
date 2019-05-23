@@ -9,7 +9,9 @@ Clone this repo.
 
 ## Running
 
-Add the location of `bashwatch.sh` to your path. 
+Add the location of `bashwatch` to your path. 
+
+Make sure to mod it to allow execute `chmod +x bashwatch`.
 
 Run `bashwatch ./scriptname.sh param1 param2`. 
 
