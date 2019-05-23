@@ -1,1 +1,1 @@
-echo "This is a test $1 $2"
+echo "Teest $1 $2"
